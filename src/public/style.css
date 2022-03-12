@@ -1,0 +1,87 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgBJ7caTDMlx-xbny0iqOpGQVZ8iaPrzZ6YA&usqp=CAU);
+}
+
+.alert-danger {
+    background-color: rgba(204, 83, 83, 0.521);
+    position: relative;
+    top: 70px;
+    color: red;
+    left: 120px;
+}
+
+.alert-true {
+    background-color: rgba(73, 226, 137, 0.521);
+    position: relative;
+    top: 70px;
+    color: green;
+    left: 120px;
+}
+
+.loginbox {
+    background-color: rgba(128, 128, 128, 0.493);
+    width: 30%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding-top: 2%;
+    overflow: hidden;
+    display: flex;
+}
+
+input {
+    background-color:rgb(31, 28, 28);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    padding: 3%;
+    min-width: 85%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.createloginaccount {
+    position: relative;
+    top: 35%;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.createloginaccount a {
+    text-decoration: none;
+    color: rgb(185, 176, 176)
+}
+.createloginaccount a:visited { color: rgb(185, 176, 176);}
+
+button {
+    position: relative;
+    margin-top: 10%;
+    top: 7%;
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 0;
+    padding: 10px;
+    width: 85%;
+    border-radius: 20px;
+    cursor:pointer;
+    color: rgb(31, 28, 28);
+    font-size: 18px;
+    margin-left: 30px;
+
+}
+
+button:hover {
+    background-color: rgb(211, 202, 202);
+}

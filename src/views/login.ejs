@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="loginbox">
+        <form action="/userlogin" method="POST">
+            <% if(locals.err_msg) { %>
+                <span class="alert-danger">
+                    <%= err_msg %>
+                </span>
+                <% } %>
+                    <% if(locals.tr_msg) { %>
+                        <span class="alert-true">
+                            <%= tr_msg %>
+                        </span>
+                        <% } %>
+                            <input type="email" placeholder="Email" name="email" required>
+                            <input type="password" placeholder="Password" name="password" required>
+                            <br><span class="createloginaccount">Don't have an account yet? <a href="/register">Create Account</a></span>
+                            <button>LOGIN!</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
